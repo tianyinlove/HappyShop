@@ -1,0 +1,6 @@
+{
+  "dependencies": {
+    "dayjs": "^1.8.35",
+    "jweixin-module": "^1.6.0"
+  }
+}

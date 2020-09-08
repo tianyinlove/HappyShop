@@ -1,0 +1,15 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/detail/detail"
+  ],
+  "subPackages": [],
+  "window": {
+    "navigationBarTextStyle": "white",
+    "navigationBarTitleText": "uni-app",
+    "navigationBarBackgroundColor": "#fc5d48",
+    "backgroundColor": "#ffe9c4"
+  },
+  "usingComponents": {},
+  "sitemapLocation": "sitemap93.json"
+}
