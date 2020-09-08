@@ -1,6 +1,0 @@
-{
-  "navigationBarTitleText": "Hairlog",
-  "usingComponents": {
-    "button-phone-number": "/components/button-phone-number/button-phone-number"
-  }
-}
