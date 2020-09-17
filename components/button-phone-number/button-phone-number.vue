@@ -1,8 +1,7 @@
 <template>
 	<view>
 		<!-- #ifdef MP -->
-		<button v-if="hasPhoneNumber || hasOldUser" class="button button-open" :class="{'button-plain': plain}" @click="handleClick">{{buttonText}}</button>
-		<button v-else class="button button-open" :class="{'button-plain': plain}" open-type="getPhoneNumber" @getphonenumber="onGetPhoneNumber">{{buttonText}}</button>
+		<button v-if="!hasPhone" class="register" open-type="getPhoneNumber" @getphonenumber="onGetPhoneNumber">{{buttonText}}</button>
 		<!-- #endif -->
 		<!-- #ifdef H5 -->
 <!-- 		<wx-open-launch-weapp id="launch-btn" username="gh_ff1c8ec34b72" path="/pages/index/index.html">
@@ -19,8 +18,7 @@
 	export default {
 		name: 'ButtonPhoneNumber',
 		props: {
-			buttonText: String,
-			plain: Boolean
+			buttonText: String
 		},
 		data() {
 			return {}
@@ -29,23 +27,17 @@
 			state() {
 				return this.$store.state
 			},
-			hasOldUser() {
-				return this.state.hasOldUser
-			},
-			hasPhoneNumber() {
-				return this.state.hasPhoneNumber
-			},
-			userInfo() {
-				return this.state.userInfo
+			hasPhone() {
+				return this.state.hasPhone
 			}
 		},
 		methods: {
 			onGetPhoneNumber({
 				detail
 			}) {
-				console.info('onGetPhoneNumberDetail:', detail)
+				console.info('获取微信手机号:', detail)
 				if (detail.errMsg === 'getPhoneNumber:ok') {
-					this.$store.commit('setPhoneNumberDetail', detail)
+					this.$store.commit('setPhoneData', detail)
 					this.handleClick()
 				}
 			},

@@ -1,5 +1,5 @@
 {
-    "name" : "NewUserShare",
+    "name" : "HappyShop",
     "appid" : "",
     "description" : "",
     "versionName" : "1.0.0",
@@ -42,13 +42,13 @@
     },
     "quickapp" : {},
     "mp-weixin" : {
-        "appid" : "wx00fc0c5f31e1de7c",
+        "appid" : "wxd69e8881c66aa59e",
         "setting" : {
             "urlCheck" : false
         }
     },
     "h5" : {
-        "title" : "益盟操盘手",
+        "title" : "HappyShop",
         "router" : {
             "mode" : "hash",
             "base" : "./"

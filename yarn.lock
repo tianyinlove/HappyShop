@@ -7,7 +7,24 @@ dayjs@^1.8.35:
   resolved "https://registry.npm.taobao.org/dayjs/download/dayjs-1.8.35.tgz?cache=0&sync_timestamp=1599050605311&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Fdayjs%2Fdownload%2Fdayjs-1.8.35.tgz#67118378f15d31623f3ee2992f5244b887606888"
   integrity sha1-ZxGDePFdMWI/PuKZL1JEuIdgaIg=
 
+echarts@^4.9.0:
+  version "4.9.0"
+  resolved "https://registry.npm.taobao.org/echarts/download/echarts-4.9.0.tgz#a9b9baa03f03a2a731e6340c55befb57a9e1347d"
+  integrity sha1-qbm6oD8Doqcx5jQMVb77V6nhNH0=
+  dependencies:
+    zrender "4.3.2"
+
 jweixin-module@^1.6.0:
   version "1.6.0"
   resolved "https://registry.npm.taobao.org/jweixin-module/download/jweixin-module-1.6.0.tgz#4a7ea614083e3c9c3f49e2fdc2bb882cfa58dfcd"
   integrity sha1-Sn6mFAg+PJw/SeL9wruILPpY380=
+
+mpvue-echarts@^0.3.2:
+  version "0.3.2"
+  resolved "https://registry.npm.taobao.org/mpvue-echarts/download/mpvue-echarts-0.3.2.tgz#e08a9dd8233dce306e248a3470bf7f0279422ac2"
+  integrity sha1-4Iqd2CM9zjBuJIo0cL9/AnlCKsI=
+
+zrender@4.3.2:
+  version "4.3.2"
+  resolved "https://registry.npm.taobao.org/zrender/download/zrender-4.3.2.tgz?cache=0&sync_timestamp=1597683497625&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Fzrender%2Fdownload%2Fzrender-4.3.2.tgz#ec7432f9415c82c73584b6b7b8c47e1b016209c6"
+  integrity sha1-7HQy+UFcgsc1hLa3uMR+GwFiCcY=

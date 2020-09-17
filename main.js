@@ -4,12 +4,13 @@ import store from './store'
 
 Vue.config.productionTip = false
 
-Vue.prototype.$store = store
+Vue.prototype.$serverUrl = 'https://unidemo.dcloud.net.cn';
+Vue.prototype.$store=store;
 
 App.mpType = 'app'
 
 const app = new Vue({
 	store,
-	...App
+    ...App
 })
 app.$mount()

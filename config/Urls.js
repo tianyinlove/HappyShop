@@ -1,11 +1,9 @@
 const Urls = {
-  get DOMAIN_APPSTATIC() {
-    return process.env.__ENV === 'test'
-      ? 'http://mobiletest.emoney.cn/appstatic'
-      : 'https://appstatic.emoney.cn'
+  get DOMAIN_Service() {
+    return 'https://unidemo.dcloud.net.cn'
   },
-  get DOMAIN_EMAPP() {
-    return 'http://mobiletest.emoney.cn/emapp'
+  get DOMAIN_ApiService() {
+    return 'https://mobiletest.emoney.cn'
   }
 }
 

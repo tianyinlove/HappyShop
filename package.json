@@ -1,6 +1,8 @@
 {
   "dependencies": {
     "dayjs": "^1.8.35",
-    "jweixin-module": "^1.6.0"
+    "echarts": "^4.9.0",
+    "jweixin-module": "^1.6.0",
+    "mpvue-echarts": "^0.3.2"
   }
 }

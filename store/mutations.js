@@ -1,37 +1,25 @@
-export function login(state, payload) {
-	state.hasLogin = true
-	state.loginCode = payload
+export function setLoginCode(state,data){
+	state.loginCode=data;
 }
 
-export function setOldUser(state){
-	// state.hasOldUser = true
+export function setUserInfo(state,data){
+	state.userInfo=data;
 }
 
-export function setUserInfo(state, payload) {
-	state.userInfo = payload
+export function setLoginUser(state,data){
+	state.isLogin=true;
+	if(data.phoneNumber){
+		state.hasPhoneNumber = true;
+	}
+	if(data.email){
+		state.hasEmail=true;
+	}
+	if(data.nickName){
+		state.hasNickName=true;
+	}
+	state.loginUser=data;
 }
 
-export function setPhoneNumberDetail(state, payload) {
-	state.hasPhoneNumber = true
-	state.phoneNumberDetail = payload
-}
-
-export function setPasskey(state, payload) {
-	state.passKey = payload
-}
-
-export function setLoginUser(state, payload) {
-	state.loginUser = payload
-}
-
-export function setGoodsInfo(state, payload) {
-	state.goodsData = payload
-}
-
-export function setGoodsId(state, payload) {
-	state.goodsId = payload
-}
-
-export function setOrderNumber(state, payload) {
-	state.orderNumber = payload
+export function setPhoneData(state, payload) {
+	state.phoneData = payload
 }
